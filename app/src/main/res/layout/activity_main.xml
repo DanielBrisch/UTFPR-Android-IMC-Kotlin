@@ -11,7 +11,7 @@
         android:id="@+id/tvPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Peso:"
+        android:text="@string/peso"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -21,7 +21,7 @@
         android:id="@+id/valorPeso"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Peso em kg:"
+        android:hint="@string/hint_peso"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@id/tvPeso"
@@ -33,7 +33,7 @@
         android:id="@+id/tvAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Altura:"
+        android:text="@string/altura"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/valorPeso">
@@ -43,7 +43,7 @@
         android:id="@+id/valorAltura"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Altura em metros"
+        android:hint="@string/hint_altura"
         android:inputType="numberDecimal"
         android:importantForAutofill="no"
         app:layout_constraintStart_toStartOf="@+id/valorPeso"
@@ -55,7 +55,7 @@
         android:id="@+id/tvImc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IMC:"
+        android:text="@string/imc"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/valorAltura">
@@ -65,8 +65,7 @@
         android:id="@+id/valorImc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="0.0"
-        android:inputType="numberDecimal"
+        android:hint="@string/hint_imc"
         android:padding="16dp"
         app:layout_constraintStart_toStartOf="@+id/valorAltura"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="130dp"
-        android:text="Calcular"
+        android:text="@string/calcular"
         app:layout_constraintStart_toStartOf="@+id/valorImc"
         app:layout_constraintTop_toBottomOf="@+id/valorImc">
     </Button>
@@ -96,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="130dp"
-        android:text="Limpar"
+        android:text="@string/limpar"
         app:layout_constraintStart_toEndOf="@+id/space"
         app:layout_constraintTop_toBottomOf="@+id/valorImc">
     </Button>
